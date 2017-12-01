@@ -13,6 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 @Service
 public class GitHubLookupService {
+
     private static final Logger logger = LoggerFactory.getLogger(GitHubLookupService.class);
 
     private final RestTemplate restTemplate;

@@ -14,13 +14,11 @@ import java.util.concurrent.Executor;
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner{
 
+	private final GitHubLookupService gitHubLookupService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
-
-
-	private final GitHubLookupService gitHubLookupService;
 
 	@Autowired
 	public DemoApplication(GitHubLookupService gitHubLookupService) {
